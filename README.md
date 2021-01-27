@@ -3,9 +3,14 @@ This ntrip caster is designed to slot into a VPS, Raspberry Pi or any other comp
 
 ---
 ## Pre-Installation
-Firstly, clone your repository.
+Firstly, clone your repository, and move down into the `conf` directory
+```
+git clone https://github.com/charlesquick/ntripcaster-containerised.git
+```
 Navigate to `ntripcaster/conf` and copy the `.dist` files to working files
 ```
+cd ntripcaster-containerised/ntripcaster/conf
+
 cp ntripcaster.conf.dist ntripcaster.conf
 cp sourcetable.dat.dist sourcetable.dat
 cp mountpos.conf.dist mountpos.conf
