@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:18.04 as builder
 
 COPY ntripcaster /ntripcaster
 
@@ -10,6 +10,12 @@ RUN ./configure
 
 RUN make install
 
+FROM ubuntu:18.04
+
+COPY --from=builder /usr/local/ntripcaster/ /usr/local/ntripcaster/
+
 EXPOSE 2101
+
+WORKDIR /usr/local/ntripcaster/logs
 
 CMD /usr/local/ntripcaster/bin/ntripcaster

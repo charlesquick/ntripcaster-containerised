@@ -1,9 +1,9 @@
 # Containerised NTRIP Caster
-This ntrip caster is designed to slot into a VPS, Raspberry Pi or any other computer running Docker and provide a highly available service consisting of multiple correction sources and rovers. The following tutorial assumes a brief knowledge of the concepts involved in the network transport of GNSS correction data and the setting up of remote machines. This caster is based off the BKG reference caster with improvements made by Baidu to support ntrip v2.0 and Nearest Base functionality.
+This ntrip caster is designed to slot into a VPS, Raspberry Pi or any other computer running Docker and provide a highly available service consisting of multiple correction sources and rovers. The following tutorial assumes a brief knowledge of the concepts involved in the network transport of GNSS correction data, standard linux commands/concepts and the setting up of remote machines. This caster is based off the BKG reference caster with improvements made by Baidu to support ntrip v2.0 and Nearest Base functionality.
 
 ---
 ## Pre-Installation
-Firstly, clone your repository, and move down into the `conf` directory
+Firstly, clone your repository
 ```
 git clone https://github.com/charlesquick/ntripcaster-containerised.git
 ```

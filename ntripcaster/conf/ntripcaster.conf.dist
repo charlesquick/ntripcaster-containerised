@@ -35,7 +35,7 @@ port 2101
 ######################## Main Server Logfile ##################################
 # logfile contains information about connections, warnings, errors etc.
 
-logdir logs
+logdir /usr/local/ntripcaster/log
 logfile ntripcaster.log
 
 mountposfile /usr/local/ntripcaster/conf/mountpos.conf
