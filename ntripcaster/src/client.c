@@ -151,6 +151,7 @@ void client_auto_select_station(void *conarg) {
         len = sock_read_lines(con->sock, gpgga, BUFSIZE);
 		pos_t pos;
 		if (parse_gpgga_msg(gpgga, &pos) != 0) {
+            sleep(info.read_gpgga_interval);
 			continue;
 		}
 		client->pos.lat = pos.lat;
