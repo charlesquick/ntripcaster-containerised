@@ -124,7 +124,7 @@ splitc (char *first, char *rest, const char divider)
     }
 
     if (first != rest) {
-        strcpy(rest, p+1);
+        memmove(rest, p+1, strlen(p+1) +1);
     }
 	return rest;
 }
